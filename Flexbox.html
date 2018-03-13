@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox弹性布局</title>
+    <link rel="stylesheet" href="Flexbox.css">
+</head>
+<body>
+<!--弹性布局的功能与用法-->
+<div class="container">
+    <!--display: flex;-->
+    <h3>1.创建一个弹性布局的容器</h3>
+    <h4>语法: display:flex;、display: inline-flex</h4>
+    <div class="container-one">
+        我是第一个弹性布局的盒子。所有的弹性布局第一步就要有一个盒子，display:flex;
+    </div>
+    <!--flex-direction: row/column-->
+    <h3>2.容器的主轴方向</h3>
+    <h4>语法: flex-direction: row/column</h4>
+    <div class="container-two">
+        <div class="container-two-one">
+            <div class="container-two-one-son">1</div>
+            <div class="container-two-one-son">2</div>
+            <div class="container-two-one-son">3</div>
+        </div>
+        <div class="container-two-two">
+            <div class="container-two-two-son">1</div>
+            <div class="container-two-two-son">2</div>
+            <div class="container-two-two-son">3</div>
+        </div>
+    </div>
+    <h6>横轴效果flex-direction:row;（默认）   ||纵轴效果flex-direction:column;</h6>
+    <!--flex-wrap:nowrap/wrap/wrap-reverse-->
+    <h3>3.容器是否换行</h3>
+    <h4>语法: flex-wrap:nowrap/wrap/wrap-reverse</h4>
+    <div class="container-three">
+        <div class="container-three-one">
+            <div class="container-three-one-son">1</div>
+            <div class="container-three-one-son">2</div>
+            <div class="container-three-one-son">3</div>
+            <div class="container-three-one-son">4</div>
+            <div class="container-three-one-son">5</div>
+            <div class="container-three-one-son">6</div>
+        </div>
+        <h6>上面效果就是 flex-wrap: nowrap;</h6>
+        <div class="container-three-two">
+            <div class="container-three-two-son">1</div>
+            <div class="container-three-two-son">2</div>
+            <div class="container-three-two-son">3</div>
+            <div class="container-three-two-son">4</div>
+            <div class="container-three-two-son">5</div>
+            <div class="container-three-two-son">6</div>
+        </div>
+        <h6>上面效果就是 flex-wrap: wrap;</h6>
+        <div class="container-three-three">
+            <div class="container-three-three-son">1</div>
+            <div class="container-three-three-son">2</div>
+            <div class="container-three-three-son">3</div>
+            <div class="container-three-three-son">4</div>
+            <div class="container-three-three-son">5</div>
+            <div class="container-three-three-son">6</div>
+        </div>
+        <h6>上面效果就是 flex-wrap:wrap-reverse;</h6>
+    </div>
+    <!--justify-content:flex-start/flex-end/center/space-between/space-around-->
+    <h3>4.项目在主轴上的对齐方式</h3>
+    <h4>语法: justify-content:flex-start/flex-end/center/space-between/space-around</h4>
+    <div class="container-four">
+        <div class="container-four-one">
+            <div class="container-four-son">1</div>
+            <div class="container-four-son">2</div>
+            <div class="container-four-son">3</div>
+            <div class="container-four-son">4</div>
+        </div>
+        <h6>上面的效果就是 justify-content: flex-start</h6>
+        <div class="container-four-two">
+            <div class="container-four-son">1</div>
+            <div class="container-four-son">2</div>
+            <div class="container-four-son">3</div>
+            <div class="container-four-son">4</div>
+        </div>
+        <h6>上面的效果就是 justify-content: flex-end</h6>
+        <div class="container-four-three">
+            <div class="container-four-son">1</div>
+            <div class="container-four-son">2</div>
+            <div class="container-four-son">3</div>
+            <div class="container-four-son">4</div>
+        </div>
+        <h6>上面的效果就是 justify-content: center</h6>
+        <div class="container-four-four">
+            <div class="container-four-son">1</div>
+            <div class="container-four-son">2</div>
+            <div class="container-four-son">3</div>
+            <div class="container-four-son">4</div>
+        </div>
+        <h6>上面的效果就是 justify-content: space-between</h6>
+        <div class="container-four-five">
+            <div class="container-four-son">1</div>
+            <div class="container-four-son">2</div>
+            <div class="container-four-son">3</div>
+            <div class="container-four-son">4</div>
+        </div>
+        <h6>上面的效果就是 justify-content: space-around</h6>
+    </div>
+    <!--align-items: flex-start/flex-end/center/baseline/stretch-->
+    <h3>5.项目在交叉轴上的对齐方式</h3>
+    <h4>语法: align-items: flex-start/flex-end/center/baseline/stretch</h4>
+    <div class="container-five">
+        <div class="container-five-one">
+            <div class="container-five-son" style="height:50px;">1</div>
+            <div class="container-five-son" style="height:70px;">2</div>
+            <div class="container-five-son" style="height:30px;">3</div>
+            <div class="container-five-son" style="height:50px;">4</div>
+        </div>
+        <h6>上面的效果就是 align-items: flex-start</h6>
+        <div class="container-five-two">
+            <div class="container-five-son" style="height:50px;">1</div>
+            <div class="container-five-son" style="height:70px;">2</div>
+            <div class="container-five-son" style="height:30px;">3</div>
+            <div class="container-five-son" style="height:50px;">4</div>
+        </div>
+        <h6>上面的效果就是 align-items: flex-end</h6>
+        <div class="container-five-three">
+            <div class="container-five-son" style="height:50px;">1</div>
+            <div class="container-five-son" style="height:70px;">2</div>
+            <div class="container-five-son" style="height:30px;">3</div>
+            <div class="container-five-son" style="height:50px;">4</div>
+        </div>
+        <h6>上面的效果就是 align-items: center</h6>
+        <div class="container-five-four">
+            <div class="container-five-son" style="height:50px;">1</div>
+            <div class="container-five-son" style="height:70px;">2</div>
+            <div class="container-five-son" style="height:30px;">3</div>
+            <div class="container-five-son" style="height:50px;">4</div>
+        </div>
+        <h6>上面的效果就是 align-items: baseline</h6>
+        <div class="container-five-five">
+            <div class="container-five-son" style="height:50px;">1</div>
+            <div class="container-five-son" style="height:70px;">2</div>
+            <div class="container-five-son" style="height:30px;">3</div>
+            <div class="container-five-son" style="height:50px;">4</div>
+        </div>
+        <h6>上面的效果就是 align-items: stretch</h6>
+    </div>
+</div>
+</body>
+</html>
