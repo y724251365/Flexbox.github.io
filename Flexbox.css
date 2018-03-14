@@ -193,3 +193,170 @@
     background: powderblue;
     font-weight: bold;
 }
+/*第六步 项目在多根轴线上面的对齐方式 align-content*/
+.container-six {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 2000px;
+}
+.container-six-one {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 600px;
+    height: 280px;
+    border: 2px solid deeppink;
+}
+.container-six-two {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    width: 600px;
+    height: 280px;
+    border: 2px solid sienna;
+}
+.container-six-three {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 600px;
+    height: 280px;
+    border: 2px solid darkslategray;
+}
+.container-six-four {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 600px;
+    height: 280px;
+    border: 2px solid peru;
+}
+.container-six-five {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 600px;
+    height: 280px;
+    border: 2px solid darkslateblue;
+}
+.container-six-six {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    width: 600px;
+    height: 280px;
+    border: 2px solid lawngreen;
+}
+.container-six-son {
+    width: 130px;
+    height: 70px;
+    background: darkorange;
+    border: 2px solid teal;
+    font-weight: bold;
+}
+/*第七步 项目的排列顺序 order: <ingeter>*/
+.container-seven {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 300px;
+}
+.container-seven-one {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    height: 240px;
+    border: 2px solid cyan;
+}
+.container-seven-two {
+    display: flex;
+    justify-content: space-around;
+    width: 360px;
+    height: 240px;
+    border: 2px solid cyan;
+}
+.container-seven-son {
+    width: 60px;
+    height: 100px;
+    background: darksalmon;
+    font-weight: bold;
+}
+/*第八步 项目的放大属性 flex-grow*/
+.container-eight {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 600px;
+}
+.container-eight-one {
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 120px;
+    border: 2px solid rosybrown;
+}
+.container-eight-two {
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 120px;
+    border: 2px solid mediumaquamarine;
+}
+.container-eight-three {
+    display:flex;
+    justify-content: space-between;
+    width: 600px;
+    height: 120px;
+    border: 2px solid goldenrod;
+}
+.container-eight-son {
+    width: 86px;
+    height: 116px;
+    background: yellowgreen;
+    font-weight: bold;
+    border: 2px solid darkslategrey;
+}
+/*第九步 项目的缩小属性 flex-shrink*/
+.container-nine {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 300px;
+}
+.container-nine-one {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    height: 100px;
+    border: 2px solid lightsalmon;
+}
+.container-nine-son {
+    width: 96px;
+    height: 96px;
+    background: #eabc27;
+    border: 2px solid #e4393c;
+}
+/*第十一步 项目的单独对齐方式 align-self*/
+.container-eleven {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 300px;
+}
+.container-eleven-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 600px;
+    height: 200px;
+    border: 2px solid mediumslateblue;
+}
+.container-eleven-son {
+    width: 100px;
+    background: sandybrown;
+}
